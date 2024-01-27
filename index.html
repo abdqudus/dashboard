@@ -183,18 +183,158 @@
             <label for="search"><img src="./images/Seacrh.png" alt="" /></label>
             <input id="search" placeholder="Search..." />
           </form>
-          <span class="notification">
-            <img
-              src="/images/solar_bell-outline.svg"
-              width="30"
-              height="30"
-              alt="Notifications"
-            />
-          </span>
+          <!-- <span class="notification"> -->
+          <img
+            src="/images/solar_bell-outline.svg"
+            width="30"
+            height="30"
+            alt="Notifications"
+          />
+          <!-- </span> -->
         </div>
-        <section>Hello world</section>
+        <section class="graph__section">
+          <div class="graph__container">
+            <header class="graph__container__header">
+              <p class="sales__trend">Sales Trends</p>
+              <p class="sort__by">
+                <span>Short by : </span>
+                <span
+                  >Weekly <img src="./images/Arrow - Down 2.svg" alt=""
+                /></span>
+              </p>
+            </header>
+            <div style="--value: 50" class="lines">
+              <span>50.000</span>
+            </div>
+            <div style="--value: 40" class="lines">
+              <span>40.000</span>
+            </div>
+            <div style="--value: 30" class="lines">
+              <span>30.000</span>
+            </div>
+            <div style="--value: 20" class="lines">
+              <span>20.000</span>
+            </div>
+            <div style="--value: 10" class="lines">
+              <span>10.000</span>
+            </div>
+            <div style="--value: 5" class="lines">
+              <span>5.000</span>
+            </div>
+            <div style="--value: 0" class="lines">
+              <span>0</span>
+              <div style="--left: 0; --height: 180%" class="child">
+                <span>Jan</span>
+              </div>
+              <div style="--left: 1; --height: 310%" class="child">
+                <span>Feb</span>
+              </div>
+              <div style="--left: 2; --height: 90%" class="child">
+                <span>Mar</span>
+              </div>
+              <div style="--left: 3; --height: 400%" class="child">
+                <span>Apr</span>
+              </div>
+              <div style="--left: 4; --height: 210%" class="child">
+                <span>May</span>
+              </div>
+              <div style="--left: 5; --height: 620%" class="child">
+                <span>Jun</span>
+              </div>
+              <div style="--left: 6; --height: 210%" class="child">
+                <span>Jul</span>
+              </div>
+              <div style="--left: 7; --height: 330%" class="child">
+                <span>Aug</span>
+              </div>
+              <div style="--left: 8; --height: 550%" class="child">
+                <span>Sep</span>
+              </div>
+              <div style="--left: 9; --height: 95%" class="child">
+                <span>Oct</span>
+              </div>
+              <div style="--left: 10; --height: 500%" class="child">
+                <span>Nov</span>
+              </div>
+              <div style="--left: 11; --height: 400%" class="child">
+                <span>Dec</span>
+              </div>
+            </div>
+          </div>
+          <div class="finance__cards">
+            <div class="card order">
+              <div class="header">
+                <span><img src="./images/box-tick.png" alt="" /></span>
+                <img src="./images/Group 3.svg" alt="" />
+              </div>
+              <p>
+                Total Order
+                <span>350</span>
+              </p>
+              <div class="footer">
+                <p>
+                  <img src="./images/Group.svg" alt="" />
+                  <span>23,5%</span>
+                </p>
+                <p>vs. previous month</p>
+              </div>
+            </div>
+            <div class="card refund">
+              <div class="header">
+                <span><img src="./images/3d-rotate.png" alt="" /></span>
+                <img src="./images/Group 3-red.svg" alt="" />
+              </div>
+              <p>
+                Total Refund
+                <span>270</span>
+              </p>
+              <div class="footer">
+                <p class="red">
+                  <img src="./images/squig-red.svg" alt="" />
+                  <span>23,5%</span>
+                </p>
+                <p>vs. previous month</p>
+              </div>
+            </div>
+            <div class="card sales">
+              <div class="header">
+                <span><img src="./images/shopping-cart.png" alt="" /></span>
+                <img src="./images/Group 3-red.svg" alt="" />
+              </div>
+              <p>
+                Average Sales
+                <span>1567</span>
+              </p>
+              <div class="footer">
+                <p class="red">
+                  <img src="./images/squig-red.svg" alt="" />
+                  <span>23,5%</span>
+                </p>
+                <p>vs. previous month</p>
+              </div>
+            </div>
+            <div class="card income">
+              <div class="header">
+                <span><img src="./images/coin.png" alt="" /></span>
+                <img src="./images/Group 3.svg" alt="" />
+              </div>
+              <p>
+                Total Income
+                <span>$350.000</span>
+              </p>
+              <div class="footer">
+                <p>
+                  <img src="./images/Group.svg" alt="" />
+                  <span>23,5%</span>
+                </p>
+                <p>vs. previous month</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/index.js"></script>
   </body>
 </html>
