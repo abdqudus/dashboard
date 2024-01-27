@@ -19,17 +19,16 @@
   --blue: #54c5eb;
   --purple: #6160dc;
 }
-body {
-  background: var(--bg);
+body[light-mode="light"] {
+  background-color: white;
+  color: var(--graph-dark);
+}
+body[light-mode="dark"] {
+  background-color: var(--graph-dark);
+  color: var(--bg);
 }
 
-.container {
-  position: relative;
-  border: 2px solid purple;
-}
-nav {
-  border: 1px solid #e5eaef;
-}
+
 /* Mobile Style */
 .nav__small {
   min-height: 78px;
@@ -265,7 +264,12 @@ aside {
   gap: 20px;
   border-right: 1px solid #ebecf2;
   background: #f7f8fa;
+
   height: 100vh;
+}
+body[light-mode="dark"] aside {
+  border-right: 1px solid var(--graph-dark);
+  background: var(--graph-dark);
 }
 .second__img {
   margin-top: 0.25rem;
@@ -303,6 +307,10 @@ aside .mode div {
   font-weight: 600;
   line-height: 28px;
 }
+body[light-mode="dark"] .sales__trend,
+body[light-mode="dark"] .nav__heading {
+  color: #fafafa;
+}
 .nav__large p.date {
   display: flex;
   align-items: center;
@@ -316,6 +324,9 @@ aside .mode div {
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
+}
+body[light-mode="dark"] .nav__large span.date {
+  color: #fafafa;
 }
 .user__profile {
   display: flex;
@@ -339,6 +350,11 @@ span.user__name {
   line-height: normal;
   margin-bottom: 0.25rem;
 }
+
+body[light-mode="dark"] .nav__large span.date,
+body[light-mode="dark"] span.user__name {
+  color: #fafafa;
+}
 span.user__email {
   color: #787486;
   text-align: right;
@@ -348,7 +364,10 @@ span.user__email {
   font-weight: 400;
   line-height: normal;
 }
-
+body[light-mode="dark"] .nav__large span.date,
+body[light-mode="dark"] span.user__email {
+  color: #fafafa;
+}
 @media screen and (min-width: 1014px) {
   nav.nav__large,
   aside {
@@ -368,16 +387,14 @@ span.user__email {
   }
 }
 /* ////////////////////////////// GRAPH SECTION //////////////////////////////*/
-.graph__section {
+/* .graph__section {
   padding: 1rem 0.75rem;
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 400;
   display: grid;
   gap: 1rem;
-  /* align-items: start; */
   grid-template-columns: 4fr 3fr;
-  /* grid-template-columns: ; */
   align-items: stretch;
 }
 @media screen and (max-width: 930px) {
@@ -522,10 +539,10 @@ span.user__email {
   position: relative;
   width: 600px;
   margin: auto;
-}
+} */
 
 /* cards section */
-
+/* 
 .finance__cards {
   display: grid;
   max-width: 100%;
@@ -608,4 +625,4 @@ footer > p:last-of-type {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: normal;
-}
+} */

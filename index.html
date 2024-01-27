@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="section.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body light-mode="light">
     <div class="container">
       <aside>
         <img src="./images/Vector.svg" width="40" height="40" alt="" />
@@ -33,13 +33,20 @@
         <span class="mode">
           <div>
             <img
+              id="light-mode"
               src="./images/brightness 1.svg"
               width="15"
               height="15"
               alt=""
             />
           </div>
-          <img src="./images/moon 1.svg" width="17" height="17" alt="" />
+          <img
+            id="dark-mode"
+            src="./images/moon 1.svg"
+            width="17"
+            height="17"
+            alt=""
+          />
         </span>
         <img src="./images/arrow-right.svg" width="24" height="24" alt="" />
         <img
@@ -142,9 +149,16 @@
                     width="15"
                     height="15"
                     alt=""
+                    id="light-small"
                   />
                 </div>
-                <img src="./images/moon 1.svg" width="17" height="17" alt="" />
+                <img
+                  src="./images/moon 1.svg"
+                  id="dark-small"
+                  width="17"
+                  height="17"
+                  alt=""
+                />
               </span>
               <img
                 src="./images/arrow-right.svg"
@@ -183,14 +197,12 @@
             <label for="search"><img src="./images/Seacrh.png" alt="" /></label>
             <input id="search" placeholder="Search..." />
           </form>
-          <!-- <span class="notification"> -->
           <img
             src="/images/solar_bell-outline.svg"
             width="30"
             height="30"
             alt="Notifications"
           />
-          <!-- </span> -->
         </div>
         <section class="graph__section">
           <div class="graph__container">
@@ -332,9 +344,157 @@
             </div>
           </div>
         </section>
+        <section class="table__section">
+          <div class="table__container">
+            <header class="table__container__header">
+              <p class="last__orders">Last Orders</p>
+              <p class="see__all">See All</p>
+            </header>
+            <div class="table__container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Invoice</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="client">
+                      <img src="./images/Frame 1000003208.png" alt="" />
+                      <span>Marcus Bergson</span>
+                    </td>
+                    <td class="date">Nov 15, 2023</td>
+                    <td class="price">$80,000</td>
+                    <td class="status paid">Paid</td>
+                    <td class="doc">
+                      <img src="./images/document-download.svg" alt="" />
+                      <span>view</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="client">
+                      <img src="./images/Jaydon.png" alt="" />
+                      <span>Jaydon Vaccaro</span>
+                    </td>
+                    <td class="date">Nov 15, 2023</td>
+                    <td class="price">$150,000</td>
+                    <td class="status refund">Refund</td>
+                    <td class="doc">
+                      <img src="./images/document-download.svg" alt="" />
+                      <span>view</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="client">
+                      <img src="./images/Corey.png" alt="" />
+                      <span>Corey Schleifer</span>
+                    </td>
+                    <td class="date">Nov 14, 2023</td>
+                    <td class="price">$87,000</td>
+                    <td class="status paid">Paid</td>
+                    <td class="doc">
+                      <img src="./images/document-download.svg" alt="" />
+                      <span>view</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="client">
+                      <img src="./images/Cooper.png" alt="" />
+                      <span>Cooper Press</span>
+                    </td>
+                    <td class="date">Nov 14, 2023</td>
+                    <td class="price">$100,000</td>
+                    <td class="status refund">Refund</td>
+                    <td class="doc">
+                      <img src="./images/document-download.svg" alt="" />
+                      <span>view</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="client">
+                      <img src="./images/Phillip.png" alt="" />
+                      <span>Phillip Lubin</span>
+                    </td>
+                    <td class="date">Nov 13, 2023</td>
+                    <td class="price">$78,000</td>
+                    <td class="status paid">Paid</td>
+                    <td class="doc">
+                      <img src="./images/document-download.svg" alt="" />
+                      <span>view</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="top__platform">
+            <div class="top__platform__header">
+              <p>Top Platform</p>
+              <p>See All</p>
+            </div>
+            <div class="platforms">
+              <div class="platform">
+                <p class="platform__name">Book Bazaar</p>
+                <p class="level__container">
+                  <span
+                    style="--width: 60%; --bg: #6160dc"
+                    class="level"
+                  ></span>
+                </p>
+                <p class="amount__container">
+                  <span class="amount"> $2,500,000</span>
+                  <span class="percentage">+15%</span>
+                </p>
+              </div>
+              <div class="platform">
+                <p class="platform__name">Artisan Aisle</p>
+                <p class="level__container">
+                  <span
+                    style="--width: 55%; --bg: #54c5eb"
+                    class="level"
+                  ></span>
+                </p>
+                <p class="amount__container">
+                  <span class="amount"> $1,800,000</span>
+                  <span class="percentage">+10%</span>
+                </p>
+              </div>
+              <div class="platform">
+                <p class="platform__name">Toy Troop</p>
+                <p class="level__container">
+                  <span
+                    style="--width: 30%; --bg: #ffb74a"
+                    class="level"
+                  ></span>
+                </p>
+                <p class="amount__container">
+                  <span class="amount"> $1,200,000</span>
+                  <span class="percentage">+8%</span>
+                </p>
+              </div>
+              <div class="platform">
+                <p class="platform__name">XStore</p>
+                <!-- <p class="level__container">
+                  <span
+                    style="--width: 30%; --bg: #ffb74a"
+                    class="level"
+                  ></span>
+                </p>
+                <p class="amount__container">
+                  <span class="amount"> $1,200,000</span>
+                  <span class="percentage">+8%</span>
+                </p> -->
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/index.js"></script>
   </body>
 </html>
