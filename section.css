@@ -291,7 +291,8 @@ footer > p:last-of-type {
   color: #26282c;
   font-weight: 600;
 }
-body[light-mode="dark"] {
+body[light-mode="dark"] .table__container__header .last__orders,
+body[light-mode="dark"] .top__platform__header p:first-child {
   color: var(--bg);
 }
 .table__container__header .see__all,
@@ -368,7 +369,10 @@ td.status {
   font-weight: 600;
   line-height: 26px; /* 144.444% */
 }
-
+body[light-mode="dark"] .platform__name,
+body[light-mode="dark"] td.price {
+  color: var(--bg);
+}
 .level__container {
   height: 10px;
   border-radius: 10px;

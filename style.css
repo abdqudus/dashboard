@@ -28,7 +28,6 @@ body[light-mode="dark"] {
   color: var(--bg);
 }
 
-
 /* Mobile Style */
 .nav__small {
   min-height: 78px;
@@ -62,6 +61,9 @@ body[light-mode="dark"] {
   width: 30px;
   background: var(--heading-clr);
   height: 5px;
+}
+body[light-mode="dark"] .hamburger span {
+  background: var(--bg);
 }
 .overlay {
   width: 0%;
